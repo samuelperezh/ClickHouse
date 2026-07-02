@@ -101,7 +101,7 @@ public:
                     "storage_location": "s3://test-bucket/streaming_table",
                     "table_id": "11111111-1111-1111-1111-111111111111",
                     "columns": [
-                        {"name": "id", "type_text": "int", "type_json": "\"int\"", "nullable": false, "position": 0}
+                        {"name": "id", "type_text": "int", "type_name": "INT", "type_json": "{\"name\":\"id\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}", "nullable": false, "position": 0}
                     ],
                     "properties": {}
                 })");
@@ -119,7 +119,7 @@ public:
                     "securable_kind": "TABLE_STREAMING_LIVE_TABLE",
                     "table_id": "22222222-2222-2222-2222-222222222222",
                     "columns": [
-                        {"name": "id", "type_text": "int", "type_json": "\"int\"", "nullable": false, "position": 0}
+                        {"name": "id", "type_text": "int", "type_name": "INT", "type_json": "{\"name\":\"id\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}", "nullable": false, "position": 0}
                     ],
                     "properties": {
                         "spark.internal.streaming_table.backing_table_path": "s3://test-bucket/streaming_table_backing"
@@ -142,7 +142,7 @@ public:
                     "securable_kind": "TABLE_MATERIALIZED_VIEW",
                     "table_id": "33333333-3333-3333-3333-333333333333",
                     "columns": [
-                        {"name": "id", "type_text": "int", "type_json": "\"int\"", "nullable": false, "position": 0}
+                        {"name": "id", "type_text": "int", "type_name": "INT", "type_json": "{\"name\":\"id\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}", "nullable": false, "position": 0}
                     ],
                     "properties": {
                         "spark.internal.pipelines.backing_table_path": "s3://test-bucket/mv_backing"
@@ -166,7 +166,7 @@ public:
                     "storage_location": "s3://test-bucket/unknown_view",
                     "table_id": "44444444-4444-4444-4444-444444444444",
                     "columns": [
-                        {"name": "id", "type_text": "int", "type_json": "\"int\"", "nullable": false, "position": 0}
+                        {"name": "id", "type_text": "int", "type_name": "INT", "type_json": "{\"name\":\"id\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}", "nullable": false, "position": 0}
                     ],
                     "properties": {}
                 })");
